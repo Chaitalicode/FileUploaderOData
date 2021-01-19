@@ -1,0 +1,15 @@
+<mvc:View controllerName="fd.FileuploaderOData1.controller.App" xmlns:mvc="sap.ui.core.mvc" 	xmlns:u="sap.ui.unified" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                     <u:FileUploader id="fileUploader" uploadComplete="handleUploadComplete" />        
+               <Button text="Upload File" press="FileUploadEvent"></Button>
+               <Image src="" alt="oops.." id="imageId"></Image>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
